@@ -6,7 +6,7 @@
 // "double  spaces"      ==> "elbuod  secaps"
 
 function reverseWords(str) {
-  return str.split("");
+  return str.split(" ").reverse();
 }
 
 console.log(reverseWords("The best club in the world - Arsenal FC"));
