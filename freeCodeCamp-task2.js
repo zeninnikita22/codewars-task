@@ -5,8 +5,6 @@
 // of this challenge, we would like you to use one of the JavaScript substring methods instead.
 
 function confirmEnding(str, target) {
-  const myRegex = new RegExp("${target(end)}");
+  const myRegex = new RegExp(target + "$", "i");
   return myRegex.test(str);
 }
-
-console.log(confirmEnding("Bastian", "n"));

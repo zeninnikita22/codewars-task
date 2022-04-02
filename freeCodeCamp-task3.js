@@ -3,11 +3,9 @@
 // .repeat() method.
 
 function repeatStringNumTimes(str, num) {
+  let acc = "";
   for (let i = 0; i < num; i++) {
-    str = str + str;
-    console.log(str);
+    acc = acc + str;
   }
   return str;
 }
-
-repeatStringNumTimes("abc", 3);
