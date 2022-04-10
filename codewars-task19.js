@@ -4,32 +4,17 @@
 
 // Note that the number will always be non-negative (>= 0).
 
-const num = "454793";
-// const myRegex = /[4]/gi;
-// console.log(num.replace(myRegex, "5-"));
+const number = 4547903543;
 
-const numArr = num.split("");
-console.log(numArr);
-const newArr = [];
-
-for (let i = 0; i < numArr.length; i++) {
-  if (
-    numArr[i] % 2 === 1 &&
-    numArr[i + 1] % 2 === 1 &&
-    numArr[i - 1] % 2 === 1
-  ) {
-    newArr.push("-" + numArr[i] + "-");
-  } else {
-    newArr.push(numArr[i]);
+function insertDash(num) {
+  const numArr = num.toString().split("");
+  const newArr = [];
+  for (let i = 0; i < numArr.length; i++) {
+    if (numArr[i] % 2 === 1 && numArr[i + 1] % 2 === 1) {
+      newArr.push(numArr[i] + "-");
+    } else {
+      newArr.push(numArr[i]);
+    }
   }
+  return newArr.join("");
 }
-
-// console.log(
-//   numArr.map((element) => {
-//     if (element % 2 === 1) {
-//       return element.replace(element, element + "-");
-//     } else {
-//       return element;
-//     }
-//   })
-// );
