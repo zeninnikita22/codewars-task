@@ -12,8 +12,6 @@
 // Vowels in this context refers to: a e i o u y (including upper case)
 // This is indexed from [1..n] (not zero indexed!)
 
-const str = "YoMama";
-
 function findIndex(str) {
   const arr = str.toLowerCase().split("");
   const newArr = [];
@@ -31,5 +29,3 @@ function findIndex(str) {
   }
   return newArr;
 }
-
-console.log(findIndex(str));
