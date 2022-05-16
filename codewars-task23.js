@@ -13,3 +13,4 @@
 // The parentheses can be nested.
 
 const str = "example(unwanted thing)example";
+const myRegex = /regex/;
