@@ -12,5 +12,7 @@
 // There can be multiple parentheses.
 // The parentheses can be nested.
 
-const str = "example(unwanted thing)example";
-const myRegex = /regex/;
+const str = "example(unwanted thing)(unwanted)example";
+const myRegex = /\(.+\)/gi;
+const replacedStr = str.replace(myRegex, "");
+console.log(replacedStr);
